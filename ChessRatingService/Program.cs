@@ -12,6 +12,7 @@ builder.Services.AddDbContext<ChessRatingDbContext>(options =>
 );
 
 builder.Services.AddScoped<MatchProcessingService>();
+builder.Services.AddScoped<LeaderboardService>();
 
 builder.Services.AddControllers();
 
