@@ -1,6 +1,0 @@
-@ChessRatingService_HostAddress = http://localhost:5003
-
-GET {{ChessRatingService_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
