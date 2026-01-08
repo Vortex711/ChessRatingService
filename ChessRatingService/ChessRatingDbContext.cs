@@ -33,8 +33,8 @@ namespace ChessRatingService
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<RatingChange>()
-                .HasOne<Match>()
-                .WithMany()
+                .HasOne(rc => rc.Match)
+                .WithMany(m => m.RatingChanges)
                 .HasForeignKey(rc => rc.MatchId)
                 .OnDelete(DeleteBehavior.Restrict);
 

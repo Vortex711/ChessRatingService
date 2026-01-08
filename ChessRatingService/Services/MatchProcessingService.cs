@@ -127,6 +127,8 @@ namespace ChessRatingService.Services
 
             playerA.CurrentRating = newRatingA;
             playerB.CurrentRating = newRatingB;
+            playerA.LastMatchAt = playedAt;
+            playerB.LastMatchAt = playedAt;
 
             _db.SaveChanges();
             transaction.Commit();

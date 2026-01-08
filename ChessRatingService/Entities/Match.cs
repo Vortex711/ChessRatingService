@@ -9,5 +9,7 @@
         public int Result { get; set; }
         public DateTime PlayedAt { get; set; }
         public DateTime ProcessedAt { get; set; }
+        public ICollection<RatingChange> RatingChanges { get; set; } = new List<RatingChange>();
+
     }
 }

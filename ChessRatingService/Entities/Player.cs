@@ -6,6 +6,6 @@
         public int CurrentRating { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatedAt { get; set; }
-        public DateTime LastMatchAt { get; set; }
+        public DateTime? LastMatchAt { get; set; }
     }
 }
